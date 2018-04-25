@@ -15,6 +15,7 @@
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -48,7 +49,7 @@
               <a class="nav-link js-scroll-trigger" href="#about">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+              <a class="nav-link js-scroll-trigger" href="#team">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -79,13 +80,16 @@
           </ul>
         </div>
         <br>
-          <a class="btn btn-primary btn-circle js-scroll-trigger" href="#services" onclick="this.blur();"><img id="arrow" src="open-iconic-master/svg/chevron-bottom.svg"></i></a>
+          <a class="btn btn-primary btn-square js-scroll-trigger" href="#services" onclick="this.blur();">
+            <img id="arrow" src="open-iconic-master/svg/chevron-bottom.svg"></i>
+            <!-- <i class="fa fa-sort-down"></i> -->
+          </a>
         </div>
       </div>
     </header>
 
     <!-- Services -->
-    <section id="services">
+    <section style="height: 100vh;" id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -127,12 +131,11 @@
     </section>
 
     <!-- Portfolio Grid -->
-    <section style="background-color:#CCFF90" id="portfolio">
+    <section style="background-color:#CCFF90;padding:33px;" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Portfolio</h2>
-            <p id="project-subheading">Here are some of my projects:</p>
           </div>
         </div>
         <div class="row">
@@ -143,10 +146,10 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/chain-reaction.png" alt="">
             </a>
             <div class="portfolio-caption">
-              <h5>SumRise</h5>
+              <h5 id="chain-reaction" style="font-size:14px;">Chain Reaction</h5>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -156,10 +159,11 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/sumrise.png" alt="">
             </a>
             <div class="portfolio-caption">
-              <h5>Chain Reaction</h5>
+              <!-- <h5>SumRise</h5> -->
+              <img style="width:80px;padding:0;margin:0;" src="img/portfolio/SumRise0.png">
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -169,10 +173,11 @@
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/cropguide.png" alt="">
             </a>
             <div class="portfolio-caption">
-              <h5>CropGuide</h5>
+              <!-- <h5>CropGuide</h5> -->
+              <img style="width:80px;padding:0;margin:0;" src="img/portfolio/cropguide-logo.png">
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -185,7 +190,8 @@
               <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h5>Ollida</h5>
+              <!-- <h5>Ollida</h5> -->
+              <img style="width:80px;padding:0;margin:0;" src="img/portfolio/ollida_logo.jpg">
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -219,7 +225,7 @@
     </section>
 
     <!-- About -->
-    <section class="bg-dark" id="about">
+    <section class="bg-dark" style="padding:33px;" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -299,7 +305,7 @@
     </section>
 
     <!-- Team -->
-    <section style="background-color:#F48FB1" id="team">
+    <section style="background-color:#F48FB1;" id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -487,21 +493,21 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto">
+              <div class="col-lg-10 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Threads</li>
-                    <li>Category: Illustration</li>
+                  <h3 class="text-uppercase">Chain Reaction</h3>
+                  <p>HTML5 Canvas API, CSS3, JavaScript</p>
+                  <video src="img/portfolio/chain-reaction-demo.mov" controls></video>
+                  <ul>
+                  <li class="project-description">Place the target anywhere on the canvas, and capture as many balls as possible.</li>
+                  <li class="project-description">At any given level, you need to capture a minimum number of balls in order to advance to the next level. The score increment starts with 10, and increases by a multiple of 10 with each successive collision.</li>
+                  <li class="project-description">The larger the chain reaction you create, the more points you score!</li>
                   </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
+                  <button class="btn btn-primary" type="button" onClick="window.open('https://aletheatoh.github.io/chain-reaction/');">
+                    Demo</button><a href="http://github.com/aletheatoh/chain-reaction" target="_blank" onclick="this.blur();">
+                    <i style="color:black;font-size:30px" class="fa fa-github"></i>
+                  </a>
                 </div>
               </div>
             </div>
