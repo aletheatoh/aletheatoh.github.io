@@ -218,8 +218,8 @@ header.masthead {
   text-align: center;
   color: white;
   background: linear-gradient(
-                     rgba(20,20,20, .1),
-                     rgba(20,20,20, .1)),
+                     rgba(20,20,20, .2),
+                     rgba(20,20,20, .2)),
                      url("../img/yosemite.jpg");
   object-fit: cover;
   background-repeat: no-repeat;
