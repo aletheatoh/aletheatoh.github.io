@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Alethea Toh</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,6 +22,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/agency.css" rel="stylesheet">
 
   </head>
 
@@ -30,7 +31,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Alethea Toh</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -38,13 +39,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#services">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Experience</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
@@ -61,9 +62,24 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Welcome To Our Studio!</div>
-          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+          <!-- <div class="intro-lead-in">Hi, I'm Alethea!</div> -->
+          <div class="intro-heading">Alethea Toh</div>
+          <div>
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="http://github.com/aletheatoh" target="_blank" onclick="this.blur();">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="http://linkedin.com/in/alethea-toh" target="_blank" onclick="this.blur();">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <br>
+          <a class="btn btn-primary btn-circle js-scroll-trigger" href="#services" onclick="this.blur();"><img id="arrow" src="open-iconic-master/svg/chevron-bottom.svg"></i></a>
         </div>
       </div>
     </header>
@@ -72,28 +88,32 @@
     <section id="services">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <div class="col-lg-12">
+            <h2 class="section-heading text-uppercase">Hi, I'm <span style="color:#9C27B0;">Alethea</span>.</h2>
           </div>
         </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">E-Commerce</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        <div class="row text">
+          <div class="col-md-8">
+            <p>I'm currently a sophomore at Duke University majoring in Computer Science with a minor in Sociology.</p>
+            <p>A little bit about me: I was born and raised in Singapore, and went to boarding school in Phuket, Thailand for three years.</p>
           </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+          <div class="col-md-4" class="text-center">
+            <div id="aboutme-container" class="text-center">
+              <img id="aboutme-pic" class="img-circle" src="img/aboutme.jpg">
+            </div>
+
+            <!-- <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+              <div id="aboutme-container">
+              <img id="aboutme-pic" class="img-circle" src="img/aboutme.jpg">
+            </div>
             </span>
             <h4 class="service-heading">Responsive Design</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p> -->
+
           </div>
+          <!--
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -101,18 +121,18 @@
             </span>
             <h4 class="service-heading">Web Security</h4>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
 
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <section style="background-color:#CCFF90" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Portfolio</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <p id="project-subheading">Here are some of my projects:</p>
           </div>
         </div>
         <div class="row">
@@ -126,8 +146,7 @@
               <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Threads</h4>
-              <p class="text-muted">Illustration</p>
+              <h5>SumRise</h5>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -140,8 +159,7 @@
               <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
+              <h5>Chain Reaction</h5>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -154,8 +172,7 @@
               <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Finish</h4>
-              <p class="text-muted">Identity</p>
+              <h5>CropGuide</h5>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -168,8 +185,7 @@
               <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
+              <h5>Ollida</h5>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -182,8 +198,7 @@
               <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Southwest</h4>
-              <p class="text-muted">Website Design</p>
+              <h5>FCC Web Scraper</h5>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -196,8 +211,7 @@
               <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>Window</h4>
-              <p class="text-muted">Photography</p>
+              <h5>SSA Website</h5>
             </div>
           </div>
         </div>
@@ -205,12 +219,11 @@
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section class="bg-dark" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">About</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-info text-uppercase">My Experience</h2>
           </div>
         </div>
         <div class="row">
@@ -286,7 +299,7 @@
     </section>
 
     <!-- Team -->
-    <section class="bg-light" id="team">
+    <section style="background-color:#F48FB1" id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -376,34 +389,6 @@
       </div>
     </section>
 
-    <!-- Clients -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Contact -->
     <section id="contact">
       <div class="container">
@@ -454,7 +439,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2018</span>
+            <span class="copyright">Copyright &copy; Alethea Toh 2018</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
