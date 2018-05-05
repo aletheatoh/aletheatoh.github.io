@@ -8,11 +8,6 @@ body {
   letter-spacing: -0.2px;
 }
 
-button:focus, button:active {
-  outline: none;
-  border: none;
-}
-
 #fish-logo {
   width: 60px;
   margin: 0;
