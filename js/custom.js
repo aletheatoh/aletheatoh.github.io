@@ -1,6 +1,6 @@
 /*
 ------------------------------------------------------------------------
-* Template Name    : Elvish | Responsive Bootstrap 4 Personal Template * 
+* Template Name    : Elvish | Responsive Bootstrap 4 Personal Template *
 * Author           : ThemesBoss                                        *
 * Version          : 1.0.0                                             *
 * Created          : May 2018                                          *
@@ -54,36 +54,36 @@
     },
 
     //Funfacts
-    ElvishApp.prototype.initFunFacts = function() {
-        var a = 0;
-        $(window).on('scroll',function() {
-            var oTop = $('#counter').offset().top - window.innerHeight;
-            if (a == 0 && $(window).scrollTop() > oTop) {
-                $('.lan_fun_value').each(function() {
-                    var $this = $(this),
-                        countTo = $this.attr('data-count');
-                    $({
-                        countNum: $this.text()
-                    }).animate({
-                            countNum: countTo
-                        },
-                        {
-                            duration: 2000,
-                            easing: 'swing',
-                            step: function() {
-                                $this.text(Math.floor(this.countNum));
-                            },
-                            complete: function() {
-                                $this.text(this.countNum);
-                                //alert('finished');
-                            }
-
-                        });
-                });
-                a = 1;
-            }
-        });
-    },
+    // ElvishApp.prototype.initFunFacts = function() {
+    //     var a = 0;
+    //     $(window).on('scroll',function() {
+    //         var oTop = $('#counter').offset().top - window.innerHeight;
+    //         if (a == 0 && $(window).scrollTop() > oTop) {
+    //             $('.lan_fun_value').each(function() {
+    //                 var $this = $(this),
+    //                     countTo = $this.attr('data-count');
+    //                 $({
+    //                     countNum: $this.text()
+    //                 }).animate({
+    //                         countNum: countTo
+    //                     },
+    //                     {
+    //                         duration: 2000,
+    //                         easing: 'swing',
+    //                         step: function() {
+    //                             $this.text(Math.floor(this.countNum));
+    //                         },
+    //                         complete: function() {
+    //                             $this.text(this.countNum);
+    //                             //alert('finished');
+    //                         }
+    //
+    //                     });
+    //             });
+    //             a = 1;
+    //         }
+    //     });
+    // },
 
     //Portfolio Filter
     ElvishApp.prototype.initPortfolioFilter = function() {
@@ -163,7 +163,7 @@
             } else {
                 $('.back_top').fadeOut();
             }
-        }); 
+        });
         $('.back_top').click(function(){
             $("html, body").animate({ scrollTop: 0 }, 1000);
             return false;
@@ -180,46 +180,46 @@
                 backDelay: 3000
             });
         });
-    },  
+    },
 
     //Typed Text Waves
-    ElvishApp.prototype.initTypedTextWaves = function() {
-        $('.ml3').each(function() {
-            $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-        });
-
-        anime.timeline({loop: true})
-        .add({
-            targets: '.ml3 .letter',
-            opacity: [0,1],
-            easing: "easeInOutQuad",
-            duration: 2250,
-            delay: function(el, i) {
-                return 150 * (i+1)
-            }
-        })
-        .add({
-            targets: '.ml3',
-            opacity: 0,
-            duration: 1000,
-            easing: "easeOutExpo",
-            delay: 1000
-        });
-    },  
+    // ElvishApp.prototype.initTypedTextWaves = function() {
+    //     $('.ml3').each(function() {
+    //         $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    //     });
+    //
+    //     anime.timeline({loop: true})
+    //     .add({
+    //         targets: '.ml3 .letter',
+    //         opacity: [0,1],
+    //         easing: "easeInOutQuad",
+    //         duration: 2250,
+    //         delay: function(el, i) {
+    //             return 150 * (i+1)
+    //         }
+    //     })
+    //     .add({
+    //         targets: '.ml3',
+    //         opacity: 0,
+    //         duration: 1000,
+    //         easing: "easeOutExpo",
+    //         delay: 1000
+    //     });
+    // },
 
     ElvishApp.prototype.init = function() {
         this.initPreLoader();
         this.initNavbarStickey();
         this.initNavbarSmooth();
         this.initNavbarScrollSpy();
-        this.initFunFacts();
+        // this.initFunFacts();
         this.initPortfolioFilter();
         this.initMfpImages();
         this.initClientSlider();
         this.initMfpVideo();
         this.initBackToTop();
         this.initTypedText();
-        this.initTypedTextWaves();
+        // this.initTypedTextWaves();
     },
 
     //init
