@@ -51,6 +51,8 @@ h2 {
   border-radius: 8px;
 }
 
+
+
 .avatar {
     vertical-align: middle;
     width: 40px;
@@ -89,6 +91,18 @@ h2 {
   margin-bottom: 0;
   padding: 0;
 }
+
+.phone-demo-pics {
+  margin-top: 5px;
+  height: 350px;
+  width: auto;
+  margin-bottom: 15px !important;
+}
+
+/* .cookie-talk-demo {
+  display: inline-block;
+  text-align: center;
+} */
 
 a.source-code {
   color: inherit;
