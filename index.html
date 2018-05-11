@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 
 </head>
 
@@ -437,14 +437,14 @@
       </div>
 
       <div class="col-lg-3 work_item seo webdesign">
-        <a href="images/works/5.jpg" class="img-zoom">
+        <a href="images/works/5.jpg" data-toggle="modal" data-target="#portfolioModal5">
           <div class="work_box">
             <div class="work_img">
               <img src="images/works/5.jpg" class="img-fluid mx-auto d-block rounded" alt="work-img">
             </div>
             <div class="work_detail">
               <p class="mb-2">Category</p>
-              <h4 class="mb-0">Project Title</h4>
+              <h4 class="mb-0">FCC Licensee Data Web Scraper</h4>
             </div>
           </div>
         </a>
@@ -458,7 +458,7 @@
             </div>
             <div class="work_detail">
               <p class="mb-2">Category</p>
-              <h4 class="mb-0">Project Title</h4>
+              <h4 class="mb-0">Last Project</h4>
             </div>
           </div>
         </a>
@@ -504,6 +504,16 @@
                   <div><a class="source-code" href="Click here" target="_blank" onclick="this.blur();"><span>Demo (Warning: Sound included)</span></a></div>
                 </div>
               </div>
+
+              <div style="display:block;">
+                <span style="display:inline-block;vertical-align:sub">
+                  <img class="link-icon" src="images/settings.svg" style="height:28px">
+                </span>
+                <div style="display:inline-block;vertical-align:super">
+                  <div><span>HTML5, CSS3, JavaScript</span></div>
+                </div>
+              </div>
+
               <div class="project-description">
                 <h5 class="project-description">Inspiration</h5>
                 <p class="project-description">I thought about the <b>cyclical nature</b> of gaming addiction: many turn to online games for a momentary stress relief, fall into addiction, become increasingly withdrawn from other domains of their lives, and consequently dive deeper into their addiction. Hence, I wanted to create a game that provides a quick and effective outlet to relieve stress, but one that limits the likelihood of addiction.</p>
@@ -563,6 +573,16 @@
                   <div><a class="source-code" href="http://sumrise.herokuapp.com/" target="_blank" onclick="this.blur();"><span>Demo</span></a></div>
                 </div>
               </div>
+
+              <div style="display:block;">
+                <span style="display:inline-block;vertical-align:sub">
+                  <img class="link-icon" src="images/settings.svg" style="height:28px">
+                </span>
+                <div style="display:inline-block;vertical-align:super">
+                  <div><span>NodeJS, Express, jQuery, PostgreSQL</span></div>
+                </div>
+              </div>
+
               <div class="project-description">
                 <h5 class="project-description">Inspiration</h5>
                 <p class="project-description">As a full-time college student, I persistently struggle with two things: 1) finding the time to read voraciously and 2) following the KISS technique when writing essays (gotta maximize the word count right?).</p>
@@ -663,6 +683,15 @@
                 </div>
               </div>
 
+              <div style="display:block;">
+                <span style="display:inline-block;vertical-align:sub">
+                  <img class="link-icon" src="images/settings.svg" style="height:28px">
+                </span>
+                <div style="display:inline-block;vertical-align:super">
+                  <div><span>NodeJS, Express, PostgreSQL, MapBox GL JS</span></div>
+                </div>
+              </div>
+
               <div style="margin-top:-5;text-align:left" class="project-description ml-4">
                 <span style="vertical-align:super">
                   <img class="link-icon" src="images/cup.svg" style="height:47px;margin-right:5px">
@@ -686,7 +715,7 @@
 
               <div class="project-description">
                 <h5 class="project-description">Background</h5>
-                <p class="project-description">Three team members and I recently took part in the Park of the Future Hackathon in Singapore organized by TNB Ventures & Ascendas-Singbridge. The theme was on envisioning a model for future business parks to improve the experiences and operations of both tenants and landlords.</p>
+                <p class="project-description">Three team members and I recently took part in the Park of the Future Hackathon in Singapore organized by TNB Ventures & Ascendas-Singbridge. The theme was on envisioning a model for reinventing future business parks, to improve the experiences and operations of both tenants and landlords.</p>
                 <p class="project-description">We emerged the winner of the 2nd Challenge — ‘Refining Residents’ Experience’ — and came in 3rd overall!</p>
                 <h5 class="project-description">Our proposal</h5>
                 <p class="project-description">We started by asking: what do business parks need, what do their tenants want? We talked to a few stakeholders, and they told us that they want a vibrant space that attracts innovative professionals, a co-space that fosters co-creation and synergies. We gathered that what the business park of today is missing is this community, and the spontaneous burst of life.</p>
@@ -713,6 +742,10 @@
                 <div class="cookie-talk-demo" style="text-align:center;margin-top:10px;">
                   <img class="phone-demo-pics" src="images/cookie-talk/star-event.png">
                   <div>Indicate your interest in an event</div>
+                </div>
+                <div class="cookie-talk-demo" style="text-align:center;margin-top:10px;">
+                  <img class="phone-demo-pics" src="images/cookie-talk/edit-delete.png">
+                  <div>Edit/Delete your events</div>
                 </div>
                 <h5 class="project-description">Next Steps</h5>
                 <p class="project-description">In the short run, we would like to integrate "interest groups" and similar features that help connect users/residents to each other. We also will like expand our target audience to the general public and nearby institutions. Use user information generated from CookieTalk activities to inform business parks on trends in the workforce</p>
@@ -770,6 +803,15 @@
                 </div>
               </div>
 
+              <div style="display:block;">
+                <span style="display:inline-block;vertical-align:sub">
+                  <img class="link-icon" src="images/settings.svg" style="height:28px">
+                </span>
+                <div style="display:inline-block;vertical-align:super">
+                  <div><span>Ruby on Rails, React, PostgreSQL</span></div>
+                </div>
+              </div>
+
               <div style="margin-top:-5;text-align:left" class="project-description ml-4">
                 <span style="vertical-align:sub">
                   <img class="link-icon" src="images/ollida/team.svg" style="height:40px;padding-left:4px;margin-right:10px">
@@ -780,31 +822,160 @@
               </div>
 
               <div class="project-description">
-                <h5 class="project-description">Inspiration</h5>
+                <h5 class="project-description">Background</h5>
                 <p class="project-description">K-pop (abbreviation for Korean pop) has amassed an enormous and growing fanbase globally. In Southeast Asia where I come from, K-pop has taken the region by storm over the past two decades.</p>
-                <p class="project-description">My teammate Isa first related a story from her K-pop fan friend: </p>
+                <p class="project-description">Today, there are six main music shows in Korea—SBS’s <i>Inkigayo</i>, MBC’s <i>Show! Music Core</i>, KBS’s <i>Music Bank</i>, Mnet’s <i>M! Countdown</i>, MBC Music’s <i>Show Champion</i> and SBS MTV’s <i>The Show</i>—each designated for one day of the week, from Tuesday to Sunday. These music shows usually crown a “winning artist of the week,” determined by a chart system that focuses heavily on digital sales, retail sales, and social media popularity.</p>
+                <p class="project-description">For example, here's the chart system breakdown for the M! Countdown Weekly Music Awards:</p>
+                <p class="project-description" style="font-weight: bold;text-align:center">M! Countdown Chart System</p>
+                <div>
+                <div class="project-description" >
+                    <canvas id="myChart" style="height:80vh; width:80vw"></canvas>
+                </div>
+                <h5 class="project-description">Inspiration</h5>
+                <p class="project-description">The idea of Ollida came about when my teammate Isa related a complaint from her former colleague. Her friend, a huge K-pop fan, wanted to track her idol groups’ standings in the days leading up to the winning announcements, but had to manually visit the different sources of metrics, a process she found tedious and troublesome. Even if she did manage to find the relevant sites, many of the sites were in Korean, which she could not understand.</p>
+                <p class="project-description">We discovered a huge pain point: there is currently <b>no aggregator</b> in the market for these statistics. Non-Korean speaking international K-pop fans also face a huge <b>language barrier</b>, since many of these websites are in Korean.</p>
+                <p class="project-description">Upon further research, we also noted an interesting phenomenon: these music award shows exploit the psychology of fandom to build buzz and create hype. As Billboard describes, the “embrace of social media has played a large role in the way fans rally around their faves.”</p>
+                <p class="project-description">The chart system's heavy weightage on Digital/Physical Sales as well as Social Media Points has given rise to a movement of "breaking records" whereby fans race to boost YouTube offical music video views, and as crazy as it sounds, repeatedly purchase digital albums through platforms such as 1) Bugs! 2) genie 3) melon.</p>
                 <h5 class="project-description">How it works</h5>
+                <p class="project-description">Ollida is a one-stop shop for K-pop fans, catered to the foreign demographic, and offers a two-fold functuality:</p>
                 <ul class="project-description">
-                  <li>For <b>web articles</b>, all you need to do is to enter the URL of your web article. The text summarizer will then parse all the main textual content from the web page, and generate a summarized version. It also automatically saves the article title for you.</li>
-                  <li>For <b>writing entries</b>, you will need to copy and paste your writing content, and you can title your writing entry. Likewise, the text summarizer will then summarize your writing content.</li>
-                  <li>You can <b>create folders</b> to organize your articles/writing entries.</li>
-                  <li><b>Everything is saved in the cloud</b>: you can also edit and delete your articles/writing entries/folders.</li>
+                  <li><b>Aggregates</b> various metrics such as Digital Single Sales, Album Sales, Social Media Points for K-pop Music Award Shows, and <b>predicts nominees’ rankings</b> in accordance to the chart system breakdowns</li>
+                  <li><b>In-app marketplace</b> connecting buyers and sellers of K-pop music albums</li>
                 </ul>
+                </div>
+                  <script>
+
+                  // As of April 26, 2018, the chart featured on M Countdown was calculated by combining Digital Single Sales (45%), "Album Sales (15%), Social Media Points (YouTube official music video views + SNS buzz) (20%), "Global Fan Votes (global fan votes through Mwave, Mnet Japan and Mnet America + SMS Votes) (10%), and "Mnet Broadcast Points (10%).
+
+                  var ctx = document.getElementById("myChart");
+                  var myChart = new Chart(ctx, {
+                      type: 'doughnut',
+                      data: {
+                          labels: ["Digital Single Sales", "Album Sales", "Social Media Points", "Global Fan Votes", "Mnet Broadcast Points"],
+                          datasets: [{
+                              label: 'Chart System Breakdown',
+                              data: [0.45, 0.15, 0.20, 0.1, 0.1],
+                              backgroundColor: [
+                                  'rgba(255, 99, 132, 0.2)',
+                                  'rgba(54, 162, 235, 0.2)',
+                                  'rgba(255, 206, 86, 0.2)',
+                                  'rgba(75, 192, 192, 0.2)',
+                                  'rgba(153, 102, 255, 0.2)',
+                                  // 'rgba(255, 159, 64, 0.2)'
+                              ],
+                              borderColor: [
+                                  'rgba(255,99,132,1)',
+                                  'rgba(54, 162, 235, 1)',
+                                  'rgba(255, 206, 86, 1)',
+                                  'rgba(75, 192, 192, 1)',
+                                  'rgba(153, 102, 255, 1)',
+                                  // 'rgba(255, 159, 64, 1)'
+                              ],
+                              borderWidth: 1
+                          }]
+                      },
+                      options: {
+                        tooltips: {
+                           callbacks: {
+                             label: function(tooltipItem, data) {
+                               var dataset = data.datasets[tooltipItem.datasetIndex];
+                               var total = dataset.data.reduce(function(previousValue, currentValue, currentIndex, array) {
+                                 return previousValue + currentValue;
+                               });
+                               var currentValue = dataset.data[tooltipItem.index];
+                               var percentage = Math.floor(((currentValue/total) * 100)+0.5);
+                               return data.labels[tooltipItem.index] + ": " + percentage + "%";
+                             }
+                           }
+                         }
+                      }
+                  });
+                  </script>
+
                 <h5 class="project-description">Design</h5>
                 <div style="text-align:center;margin-top:10px;">
                   <img class="phone-demo-pics" src="images/ollida/homepage.png">
-                  <div>User enters URL</div>
+                  <div>Homepage</div>
                 </div>
                 <div style="text-align:center;margin-top:10px;">
                   <img class="phone-demo-pics" src="images/ollida/nominees.png">
-                  <div>Generated Summary + Title</div>
+                  <div>M Countdown Nominees List</div>
                 </div>
                 <div style="text-align:center;margin-top:10px;">
                   <img class="phone-demo-pics" src="images/ollida/digital-sales.png">
-                  <div>User enters writing content + title</div>
+                  <div>Digital Sales for WINNER's Really Really</div>
                 </div>
                 <div style="text-align:center;margin-top:10px;">
                   <img class="phone-demo-pics" src="images/ollida/youtube-views.png">
+                  <div>Youtube Views for WINNER's Really Really</div>
+                </div>
+                <div style="text-align:center;margin-top:10px;">
+                  <img class="demo-pics" src="images/sumrise-demo-1.png">
+                  <div>Edit Writing Content</div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <div class="project-description ml-4">
+                <h3 class="mb-3" style="text-align:left;padding-left:3px;display:inline">FCC Licensee Data <span class="font-weight-bold text-custom" style="color:#7578f9 !important">Web Scraper</span></h3>
+                <img class="logos" src="images/sumrise-logo.png">
+              </div>
+              <div class="links">
+                <span style="display:inline-block;vertical-align:sub">
+                  <img class="link-icon" src="images/link.svg">
+                </span>
+                <div style="display:inline-block;vertical-align:super">
+                  <div><a class="source-code" href="https://github.com/aletheatoh/WebScraper" target="_blank" onclick="this.blur();"><span>Source Code</span></a></div>
+                </div>
+              </div>
+
+              <div class="project-description">
+                <h5 class="project-description">Background</h5>
+                <p class="project-description">As a full-time college student, I persistently struggle with two things: 1) finding the time to read voraciously and 2) following the KISS technique when writing essays (gotta maximize the word count right?).</p>
+                <p class="project-description">An avid researcher (albeit a poor follower) of productivity habits, I decided to design a text summarizer can summarize both web articles and textual content.</p>
+                <h5 class="project-description">How it works</h5>
+                <ul class="project-description">
+                  <li>For <b>web articles</b>, enter the URL of your web article. The text summarizer will then parse all the main textual content from the web page, and generate a summarized version. It also automatically saves the article title for you.</li>
+                  <li>For <b>writing entries</b>, copy and paste your writing content, and title your writing entry if you wish to. Likewise, the text summarizer will then summarize your writing content.</li>
+                  <li>You can <b>create folders</b> to organize your articles/writing entries.</li>
+                  <li><b>Everything is saved in the cloud</b>: you can also edit and delete your articles/writing entries/folders.</li>
+                </ul>
+                <div style="text-align:center;margin-top:10px;">
+                  <img class="demo-pics" src="images/sumrise-demo-1.png">
+                  <div>User enters URL</div>
+                </div>
+                <div style="text-align:center;margin-top:10px;">
+                  <img class="demo-pics" src="images/sumrise-demo-1.png">
+                  <div>Generated Summary + Title</div>
+                </div>
+                <div style="text-align:center;margin-top:10px;">
+                  <img class="demo-pics" src="images/sumrise-demo-1.png">
+                  <div>User enters writing content + title</div>
+                </div>
+                <div style="text-align:center;margin-top:10px;">
+                  <img class="demo-pics" src="images/sumrise-demo-1.png">
                   <div>Edit Article</div>
                 </div>
                 <div style="text-align:center;margin-top:10px;">
@@ -823,7 +994,7 @@
                   <img class="demo-pics" src="images/sumrise-demo-1.png">
                   <div>Track your progress!</div>
                 </div>
-
+                <h5 class="project-description">Design</h5>
               </div>
 
             </div>
