@@ -801,6 +801,10 @@ button:focus {
     background-color: #f4c20d;
 }
 
+.cv_edu_exp .cv_edu_exp_box #tsc::after {
+    background-color: #00B0FF;
+}
+
 .cv_edu_exp .cv_edu_exp_box #google::after {
     background-color: #3cba54;
 }
