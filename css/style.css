@@ -1146,6 +1146,7 @@ button:focus {
       height: 250px;
       width: auto;
       border-radius: 8px;
+      margin-top: 10px;
     }
 
     .custom-nav {
@@ -1176,7 +1177,7 @@ button:focus {
         color: #000;
     }
     .header_title {
-        font-size: 35px;
+        font-size: 30px;
         line-height: 1.2;
     }
     .header_subtitle {
