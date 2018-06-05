@@ -104,11 +104,6 @@ a.source-code:hover {
     cursor:pointer;
 }
 
-.modal-body {
-  /* width: 900px; */
-  /* padding-left: 0px;
-  margin-left: 0px; */
-}
 
 .portfolio-modal {
   padding-right: 0px !important;
@@ -1144,6 +1139,16 @@ button:focus {
 
   .project-description.ml-4 {
     z-index: -5;
+  }
+
+  .project-description {
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+    text-align: left !important;
+  }
+
+  video {
+    width: 320px;
   }
 
   .portfolio-modal .close-modal {
