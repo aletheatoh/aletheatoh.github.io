@@ -1138,6 +1138,54 @@ button:focus {
 
 @media (max-width: 768px) {
 
+  .logos {
+    display: none;
+  }
+
+  .project-description.ml-4 {
+    z-index: -5;
+  }
+
+  .portfolio-modal .close-modal {
+    z-index: 3;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .portfolio-modal .close-modal:hover {
+    opacity: 0.3;
+  }
+
+  .portfolio-modal .close-modal .lr {
+    /* Safari and Chrome */
+    z-index: 1051 !important;
+    width: 1px !important;
+    height: 70px !important;
+    /* margin-left: 30px; */
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #212529;
+  }
+
+  .portfolio-modal .close-modal .lr .rl {
+    /* Safari and Chrome */
+    z-index: 1052 !important;
+    width: 1px !important;
+    height: 70px !important;
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background-color: #212529;
+  }
+
     #goldfish-bio-pic {
       display: none;
     }
