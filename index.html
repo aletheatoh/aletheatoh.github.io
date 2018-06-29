@@ -862,7 +862,7 @@
                   <img class="link-icon" src="images/link.svg">
                 </span>
                 <div style="display:inline-block;vertical-align:super">
-                  <div><a class="source-code" href="#" target="_blank" onclick="this.blur();"><span>Source Code</span></a></div>
+                  <div><a class="source-code" href="https://github.com/aletheatoh/hawkersaurus" target="_blank" onclick="this.blur();"><span>Source Code</span></a></div>
                 </div>
               </div>
 
@@ -871,7 +871,7 @@
                   <img class="link-icon" src="images/video-player.svg" style="height:25px">
                 </span>
                 <div style="display:inline-block;vertical-align:super">
-                  <div><a class="source-code" href="#" target="_blank" onclick="this.blur();"><span>Demo</span></a></div>
+                  <div><a class="source-code" href="https://hawkersaurus.herokuapp.com/" target="_blank" onclick="this.blur();"><span>Demo</span></a></div>
                 </div>
               </div>
 
@@ -880,7 +880,7 @@
                   <img class="link-icon" src="images/hackathon.svg" style="height:30px">
                 </span>
                 <div style="display:inline-block;vertical-align:super">
-                  <div><a class="source-code" href="#" target="_blank" onclick="this.blur();"><span>Hackathon Details</span></a></div>
+                  <div><a class="source-code" href="https://www.eventbrite.com/e/angelhack-singapore-hackathon-2018-tickets-46209859935?aff=ebdssbdestsearch#" target="_blank" onclick="this.blur();"><span>Hackathon Details</span></a></div>
                 </div>
               </div>
 
@@ -904,10 +904,10 @@
 
               <div class="project-description">
                 <h5 class="project-description">Background</h5>
-                <p class="project-description">My friends and I recently took part in the Singapore leg of the AngelHack Global Hackathon. The theme was on envisioning a model for reinventing business parks of the future, to improve the experiences and operations of both tenants and landlords.</p>
+                <p class="project-description">My friends and I recently took part in the Singapore leg of the AngelHack Global Hackathon, of which the theme was seamless technology.</p>
                 <h5 class="project-description">Our proposal</h5>
-                <p class="project-description">We talked to a few stakeholders, and they told us that they want a vibrant space that attracts innovative professionals, a co-space that <b>fosters co-creation and synergies</b>. We gathered that what the business park of today is missing is this community, and the <b>spontaneous burst of life</b>.</p>
-                <p class="project-description">CookieTalk is a platform for tenants to <b>organize and attend spontaneous, pop-up events</b> within business parks. We want to create a culture of ground-up self-organisation: with CookieTalk, any resident can create their own event — and these are meant to be spontaneous, pop-up events — not centrally organised workshops or conferences.</p>
+                <p class="project-description">As lovers of hawker food, we realized something very troubling: while we can easily find all the Din Tai Fungs in Singapore, we do not know where all the hawker centres, kopitiams, and food courts are. </p>
+                <p class="project-description">hawkersaurus crowd-sources data and reviews on hawker stalls to recreate Yelp  —  just for hawker stalls. A double-edged sword, hawkersaurus not only provides a fun, social and seamless experience for food lovers to discover hawker stalls, but also showcases and creates an online presence for hawkers, who are not easily found on mainstream restaurant discovery platforms such as Google Places, Yelp and TripAdvisor. On the app, hawkers can also engage in sponsored advertising.</p>
                 <h5 class="project-description">How it works</h5>
 
               <div id="cookie-talk-carousel" class="carousel slide" data-ride="carousel">
@@ -953,9 +953,9 @@
               </div>
 
 
-              <h5 class="project-description">Next Steps</h5>
+              <!-- <h5 class="project-description">Next Steps</h5>
               <p class="project-description">We're looking to integrate "interest groups" to better connect users / residents to each other. In the longer term, we're looking to expand our target demographic to the general public and nearby institutions.</p>
-              <p class="project-description">Additionally, we think that on the management level, the user information generated from CookieTalk activities may be useful in informing business parks on behavioural trends among their residents.</p>
+              <p class="project-description">Additionally, we think that on the management level, the user information generated from CookieTalk activities may be useful in informing business parks on behavioural trends among their residents.</p> -->
             </div>
           </div>
         </div>
@@ -1348,9 +1348,11 @@
         var $animation_elements = $('.animation-element');
         var $window = $(window);
 
+        var offsetHeight = document.getElementById('navbarCollapse').offsetHeight;
+
         function check_if_in_view() {
           var window_height = $window.height();
-          var window_top_position = $window.scrollTop();
+          var window_top_position = $window.scrollTop() + offsetHeight;
           var window_bottom_position = (window_top_position + window_height);
 
           $.each($animation_elements, function() {
@@ -1363,12 +1365,15 @@
             if ((element_bottom_position >= window_top_position) &&
             (element_top_position <= window_bottom_position)) {
               $element.addClass('in-view');
-            } 
+            }
+            else {
+              // $element.removeClass('in-view');
+            }
           });
         }
 
         $window.on('scroll resize', check_if_in_view);
-        $window.trigger('scroll');
+        // $window.trigger('scroll');
         </script>
 
 </section>
