@@ -964,6 +964,10 @@ button:focus {
 
 .work_box:hover .work_img:after {
     background: rgba(0, 0, 0, 0.8);
+    /* background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px */
 }
 
 .work_box:hover .work_img>img {
