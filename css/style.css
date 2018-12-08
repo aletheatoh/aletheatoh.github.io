@@ -908,6 +908,11 @@ button:focus {
     padding: 15px;
 }
 
+.photo_item {
+    position: relative;
+    padding: 0px;
+}
+
 .work_box {
     overflow: hidden;
     position: relative;
