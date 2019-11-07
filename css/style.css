@@ -40,9 +40,9 @@ h2 {
 }
 
 #aboutme-pic {
-  height: 300px;
+  height: 200px;
   width: auto;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   margin-bottom: 10px;
   margin-right: 5px;
   margin-top: 10px;
@@ -499,13 +499,14 @@ button:focus {
 }
 
 .custom-nav .navbar-nav li a {
-    color: rgba(255, 255, 255, 0.5);
+    /* color: rgba(255, 255, 255, 0.5); */
+    color: #000;
     font-size: 16px;
     background-color: transparent !important;
     padding: 15px 0;
     margin: 0 7px;
     font-weight: 600;
-    transition: all 0.4s;
+    transition: all 0.6s;
 }
 
 .navbar-toggler {
@@ -518,7 +519,8 @@ button:focus {
 .custom-nav .navbar-nav li.active a,
 .custom-nav .navbar-nav li a:hover,
 .custom-nav .navbar-nav li a:active {
-    color: #fff !important;
+    /* color: #fff !important; */
+    color: #7578f9 !important;
 }
 
 .custom-nav.stickyadd .navbar-nav li.active a,
@@ -569,12 +571,12 @@ button:focus {
         4.HOME
 ============================*/
 
-.home-bg {
+/* .home-bg {
     background-image: url(../images/yosemite.jpg);
     background-position: center center;
     background-size: cover;
     position: relative;
-}
+} */
 
 .home-table-center {
     display: table-cell;
@@ -593,7 +595,7 @@ button:focus {
 }
 
 .header_title {
-    font-size: 72px;
+    font-size: 36px;
     font-weight: 400;
     line-height: 1.2;
     text-transform: capitalize;
@@ -1235,7 +1237,7 @@ button:focus {
     }
 
     #aboutme-pic {
-      height: 250px;
+      height: 175px;
       width: auto;
       border-radius: 8px;
       margin-top: 30px;
