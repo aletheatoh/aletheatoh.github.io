@@ -1239,7 +1239,7 @@ button:focus {
     }
 
     .aboutme-description {
-      font-size: 0.8rem !important;
+      font-size: 0.9rem !important;
     }
 
     #about-box-1 {
@@ -1247,11 +1247,11 @@ button:focus {
     }
 
     #about-box-2, #about-box-4 {
-      width: 50%;
+      width: 55%;
     }
 
     #about-box-3 {
-      width: 50%;
+      width: 58%;
     }
 
 
