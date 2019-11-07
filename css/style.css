@@ -1239,25 +1239,21 @@ button:focus {
     }
 
     .aboutme-description {
-      font-size: 0.9rem !important;
+      font-size: 0.95rem !important;
     }
 
     #about-box-1 {
-      width: 70%;
+      width: 65%;
     }
 
     #about-box-2, #about-box-4 {
-      width: 55%;
+      width: 50%;
     }
 
     #about-box-3 {
-      width: 58%;
+      width: 55%;
     }
 
-
-    .about-box {
-      width: 65%;
-    }
 
     .custom-nav {
         margin-top: 0px;
