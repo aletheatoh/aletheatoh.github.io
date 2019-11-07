@@ -42,10 +42,9 @@ h2 {
 #aboutme-pic {
   height: 200px;
   width: auto;
-  /* border-radius: 8px; */
   margin-bottom: 10px;
   margin-right: 5px;
-  margin-top: 10px;
+  margin-top: -10px !important;
 }
 
 .avatar {
@@ -663,7 +662,7 @@ button:focus {
         5.ABOUT ME
 ============================*/
 
-#aboutme-description {
+.aboutme-description {
   font-size: 1.12rem;
 }
 
@@ -1239,9 +1238,22 @@ button:focus {
       margin-top: 10px;
     }
 
-    #aboutme-description {
+    .aboutme-description {
       font-size: 0.8rem !important;
     }
+
+    #about-box-1 {
+      width: 70%;
+    }
+
+    #about-box-2, #about-box-4 {
+      width: 50%;
+    }
+
+    #about-box-3 {
+      width: 50%;
+    }
+
 
     .about-box {
       width: 65%;
