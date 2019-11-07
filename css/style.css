@@ -571,13 +571,6 @@ button:focus {
         4.HOME
 ============================*/
 
-/* .home-bg {
-    background-image: url(../images/yosemite.jpg);
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-} */
-
 .home-table-center {
     display: table-cell;
     vertical-align: middle;
