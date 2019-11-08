@@ -44,7 +44,11 @@ h2 {
   width: auto;
   margin-bottom: 10px;
   margin-right: 5px;
-  margin-top: -10px !important;
+
+}
+
+#aboutme-container {
+  padding-top: 20px;
 }
 
 .avatar {
@@ -1240,7 +1244,11 @@ button:focus {
     #aboutme-pic {
       height: 160px;
       width: auto;
-      margin-top: 10px;
+      padding-top: -10px !important;
+    }
+
+    #aboutme-container {
+      padding-top: -10px !important;
     }
 
     #about-box-1 {
