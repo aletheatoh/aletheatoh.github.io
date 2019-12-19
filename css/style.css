@@ -30,6 +30,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700|Lato:400,700');
 
+html, body {
+  overflow-x: hidden;
+}
+
 .row.justify-content-center {
   margin-bottom:-40px;
   padding: 0;
@@ -49,6 +53,8 @@ h2 {
 
 #aboutme-container {
   padding-top: 20px;
+  margin: auto;
+  /* vertical-align: middle; */
 }
 
 .avatar {

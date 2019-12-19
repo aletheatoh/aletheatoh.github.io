@@ -86,10 +86,11 @@
     // },
 
     //Portfolio Filter
-    ElvishApp.prototype.initPortfolioFilter = function() {
+    ElvishApp.prototype.initPortfolioFilter1 = function() {
         $(window).on('load', function () {
-            var $container = $('.work-filter');
-            var $filter = $('#menu-filter');
+            var $container = $('.work-filter-1');
+            var $filter = $('#menu-filter-1');
+
             $container.isotope({
                 filter: '*',
                 layoutMode: 'masonry',
@@ -100,6 +101,39 @@
             });
 
             $filter.find('a').on("click",function() {
+                var selector = $(this).attr('data-filter');
+                $filter.find('a').removeClass('active');
+                $(this).addClass('active');
+                $container.isotope({
+                    filter: selector,
+                    animationOptions: {
+                        animationDuration: 750,
+                        easing: 'linear',
+                        queue: false,
+                    }
+                });
+                return false;
+            });
+        });
+    },
+
+    ElvishApp.prototype.initPortfolioFilter2 = function() {
+        $(window).on('load', function () {
+
+            var $container = $('.work-filter-2');
+            var $filter = $('#menu-filter-2');
+
+            $container.isotope({
+                filter: '.quotes',
+                layoutMode: 'masonry',
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear'
+                }
+            });
+
+            $filter.find('a').on("click",function() {
+              console.log('clicked!');
                 var selector = $(this).attr('data-filter');
                 $filter.find('a').removeClass('active');
                 $(this).addClass('active');
@@ -213,7 +247,8 @@
         this.initNavbarSmooth();
         this.initNavbarScrollSpy();
         // this.initFunFacts();
-        this.initPortfolioFilter();
+        this.initPortfolioFilter1();
+        this.initPortfolioFilter2();
         this.initMfpImages();
         this.initClientSlider();
         this.initMfpVideo();
